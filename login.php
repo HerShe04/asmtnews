@@ -23,8 +23,8 @@
                         <input type="password" name="password" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <hr/>
-                      Do not have account? <a href="signup.php">Signup</a>
-                    <input type="submit" value="Login" name="loginsubmit" style="float:right;" class="btn btn-success">
+                      Do not have account? <a href="signup.php">Sign Up</a>
+                    <input type="submit" value="Login" name="loginsubmit" style="float:right;" class="btn btn-dark">
                 </form>
                 </div>
                

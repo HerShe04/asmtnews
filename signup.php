@@ -26,7 +26,7 @@
                     </div>
                     <hr/>
                     Already Account ? <a href="login.php">Login</a> 
-                    <input type="submit" value="Signup" name="submit" style="float:right;" class="btn btn-success">
+                    <input type="submit" value="Sign Up" name="submit" style="float:right;" class="btn btn-dark">
                 </form>
                 </div>
                
