@@ -23,9 +23,9 @@
             <li><a class="dropdown-item" href="db/logout.php">Logout</a></li>
           </ul>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
-        </li>
+        </li> -->
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

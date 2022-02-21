@@ -1,15 +1,13 @@
 <?php
-session_start();
- if(!isset($_SESSION['login']) || !$_SESSION['login']==1){
-   header('Location:login.php');
- }
- $id = $_SESSION['user_id']; 
- include('db/connect.php');
- $query = "SELECT * FROM users WHERE id='$id'";
-$result = mysqli_query($conn,$query);
-$data = mysqli_fetch_assoc($result);
-
-
+    session_start();
+    if(!isset($_SESSION['login']) || !$_SESSION['login']==1){
+    header('Location:login.php');
+    }
+    $id = $_SESSION['user_id']; 
+    include('db/connect.php');
+    $query = "SELECT * FROM users WHERE id='$id'";
+    $result = mysqli_query($conn,$query);
+    $data = mysqli_fetch_assoc($result);
 
 ?>
 
@@ -23,9 +21,17 @@ $data = mysqli_fetch_assoc($result);
             
             <div class="container">
              <div class="row">
-           <?php include ('include/left-nav.php');?>
+            <?php include('include/left-nav.php');?>    
                <div class="col-8">
-                 this is col 8
+                <form method="POST" action="#">
+                    <label>Category title</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="category">
+                    </div>
+                    <br/>
+                    <button type="submit" class="btn btn-dark">Save</button>
+                </form>
+
                </div>
              </div>
             </div>
