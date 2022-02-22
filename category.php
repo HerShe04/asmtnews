@@ -23,14 +23,19 @@
              <div class="row">
             <?php include('include/left-nav.php');?>    
                <div class="col-8">
-                <form method="POST" action="#">
+                <form method="POST" action="db/add-category.php">
                     <label>Category title</label>
                     <div class="input-group">
                         <input type="text" class="form-control" name="category">
                     </div>
                     <br/>
+                     <div class="input-group">
+                        <input type="text" placeholder="fa icon class" class="form-control" name="iconclass">
+                    </div>
+                    <br/>
                     <button type="submit" class="btn btn-dark">Save</button>
                 </form>
+                <?php include('include/message.php');?>
 
                </div>
              </div>
