@@ -39,37 +39,34 @@
                     <br/>
                     <button type="submit" class="btn btn-dark">Save</button>
                 </form>
-                <?php include('include/message.php');?>
-                <div class="row justify-content-md-center">
-                    <?php 
-                    if (mysqli_num_rows($categoryQuery)==0){
-                        echo "<h3> No category found";
-                    }else {
-                        ?>
-                        <table class="table">
-                            <thead>
-                                <th>Title</th>
-                                <th>Action</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
+               <?php include('include/message.php'); ?>
 
-                          <?php } ?>     
+        <div class="row justify-content-md-center"></div>
+        <?php
+          if(mysqli_num_rows($categoryResult)==0){
+            echo "<h3>No Category found</h3>";
+           }else{ ?>
 
-
-                    
-                </div>
-
-               </div>
-             </div>
-            </div>
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+           <table class="table">
+             <thead>
+               <th>Title</th>
+               <th>Action</th>
+           </thead>
+           <tbody>
+             <?php while($row=mysqli_fetch_assoc($categoryResult)) { ?>         
+           <tr>            
+             <td><?php echo $row['title'];?></td>
+             <td>D | E</td>
+           </tr>
+           <?php } ?>
+           <tbody>
+             </table>
+            
+          <?php }
+          ?>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 </html>
