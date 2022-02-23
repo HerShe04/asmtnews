@@ -18,6 +18,7 @@
 <html>
         <head>
             <title>Home-Asmt News</title>
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         </head>
       <body>
@@ -56,10 +57,10 @@
              <?php while($row=mysqli_fetch_assoc($categoryResult)) { ?>         
            <tr>            
              <td><?php echo $row['title'];?></td>
-             <td>D | E</td>
+             <td>D  | E</td>
            </tr>
            <?php } ?>
-           <tbody>
+             </tbody>
              </table>
             
           <?php }
