@@ -9,6 +9,10 @@
     $result = mysqli_query($conn,$query);
     $data = mysqli_fetch_assoc($result);
 
+    $categoryQuery = "SELECT * FROM category";
+    $categoryResult = mysqli_query($conn,$categoryQuery);
+
+
 ?>
 
 <html>
@@ -36,6 +40,30 @@
                     <button type="submit" class="btn btn-dark">Save</button>
                 </form>
                 <?php include('include/message.php');?>
+                <div class="row justify-content-md-center">
+                    <?php 
+                    if (mysqli_num_rows($categoryQuery)==0){
+                        echo "<h3> No category found";
+                    }else {
+                        ?>
+                        <table class="table">
+                            <thead>
+                                <th>Title</th>
+                                <th>Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                          <?php } ?>     
+
+
+                    
+                </div>
 
                </div>
              </div>
