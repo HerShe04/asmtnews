@@ -10,7 +10,7 @@ if (isset ($_POST['category'])){
                  if(mysqli_query($conn,$query)){
             $msg ="Successfully Inserted";
                 }else{
-            $msg =mysqli_error();
+            $msg = mysqli_error();
         }
         header('Location:../category.php?msg='.$msg);
              }else{
