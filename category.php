@@ -56,8 +56,9 @@
              <?php while($row=mysqli_fetch_assoc($categoryResult)) { ?>         
            <tr>            
              <td><?php echo $row['title'];?></td>
-             <td> <a href="db/delete-category.php?id=<?php echo $row['id'];?>">D </a>| E</td>
+             <td> <a href="db/delete-category.php?id=<?php echo $row['id'];?>"><i class="fa-solid fa-trash-can"></i> </a>| E</td>
            </tr>
+           <i class="fa-solid fa-trash-can"></i>
            <?php } ?>
              </tbody>
              </table>
