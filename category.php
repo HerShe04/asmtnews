@@ -70,7 +70,6 @@
   </div>
 
 
-
   <script>
   function deleteConfirmation(id){
 bootbox.confirm({ 
