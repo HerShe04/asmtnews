@@ -58,9 +58,9 @@ else {
                 </form>
                 <?php include('include/message.php'); ?>
         
+             </div>
+          </div>
         </div>
-    </div>
-    </div>
 
 
 
