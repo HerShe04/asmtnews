@@ -56,7 +56,7 @@
              <?php while($row=mysqli_fetch_assoc($categoryResult)) { ?>         
            <tr>            
             <td><?php echo $row['title'];?></td>
-             <td> <a href="#" onclick= "deleteConfirmation(<?php echo $row['id'];?>);"><i class="fas fa-trash" style="color:red;"></i> </a>| E</td>
+             <td> <a href="#" onclick="deleteConfirmation(<?php echo $row['id']; ?>);"><i class="fas fa-trash" style="color:red;"></i> </a>| <a href="edit-category.php?id=<?php echo $row['id'];?>"><i class="fas fa-edit"></i></a></td>
            </tr>
            <i class="fa-solid fa-trash-can"></i>
            <?php } ?>
