@@ -28,7 +28,6 @@
         header('Location:../login.php?errmsg=email and password does not match');
     }
 
-
   }
 
 ?>

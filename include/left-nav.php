@@ -4,4 +4,4 @@
                    <li class="list-group-item"><a href="add-post.php">Add Post</a></li>
                    <li class="list-group-item"><a href="post.php">Add Post</a></li>
                  </ul>
-               </div>
+    </div>

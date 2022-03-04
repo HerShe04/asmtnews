@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -12,6 +14,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
@@ -22,6 +25,7 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="db/logout.php">Logout</a></li>
           </ul>
+
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>

@@ -9,6 +9,7 @@
     $result = mysqli_query($conn,$query);
     $data = mysqli_fetch_assoc($result);
 
+    
 ?>
 
 <html>

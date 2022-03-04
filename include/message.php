@@ -6,6 +6,7 @@
   </div>
   <?php } ?>
 
+  
   <?php
   if(isset($_GET['msg'])){ ?>
   <div class="alert alert-dark">

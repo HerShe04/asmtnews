@@ -31,4 +31,5 @@
        $msg = "data is not acceptable";
        header("Location:../signup.php?errmsg=".$msg);
    }
+   
 ?>
