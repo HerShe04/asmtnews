@@ -9,6 +9,10 @@
     $result = mysqli_query($conn,$query);
     $data = mysqli_fetch_assoc($result);
 
+    $categoryQuery ="SELECT * FROM category";
+    $categoryResult=mysqli_query($conn,$categoryQuery);
+
+    
 ?>
 
 <html>
@@ -31,9 +35,14 @@
                     <input type="text" class="form-control" name="title">
                   </div>
 
-                     <div class="mb-3">
+                  <div class="mb-3">
                     <label for="" class="form-label"></label>
                    <textarea class="form-control" name="content"></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="" class="form-label">Cover Image</label>
+                  <input type="file" name="image">
                   </div>
 
                 </form>
