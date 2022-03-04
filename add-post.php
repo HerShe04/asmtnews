@@ -21,9 +21,22 @@
             
             <div class="container">
              <div class="row">
-            <?php include('include/left-nav.php');?>    
+            <?php include('include/left-nav.php');?>  
+
                <div class="col-8">
-                 this is col 8
+                <form method="POST" action="#">
+
+                  <div class="mb-3">
+                    <label for="" class="form-label">Title</label>
+                    <input type="text" class="form-control" name="title">
+                  </div>
+
+                     <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                   <textarea class="form-control" name="content"></textarea>
+                  </div>
+
+                </form>
                </div>
              </div>
             </div>
