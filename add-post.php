@@ -12,7 +12,7 @@
     $categoryQuery ="SELECT * FROM category";
     $categoryResult=mysqli_query($conn,$categoryQuery);
 
-    
+
 ?>
 
 <html>
@@ -45,6 +45,15 @@
                   <input type="file" name="image">
                   </div>
 
+                  <div class="mb-3">
+                    <label for="" class="form-label">Category</label>
+                      <select class="form-control" name="category">
+                        <?php while ($row=mysqli_fetch_assoc($categoryResult)){ ?>
+                              <option value="<?php echo $row['id']; ?>"> 
+                              <?php echo $row['title']; ?> </option>
+                        <?php } ?>
+                      </select>
+                  </div>
                 </form>
                </div>
              </div>

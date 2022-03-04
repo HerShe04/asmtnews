@@ -42,19 +42,19 @@ else {
             <div class="container">
              <div class="row">
             <?php include('include/left-nav.php');?>    
-               <div class="col-8">
-                <form method="POST" action="db/edit-category.php">
-                    <input type="hidden" name="id" value="<?php echo $cid;?>">
-                    <label>Category title</label>
-                    <div class="input-group">
-                        <input type="text" value="<?php echo $row['title'];?>" class="form-control" name="category">
-                    </div>
-                    <br/>
-                     <div class="input-group">
-                        <input type="text" value="<?php echo $row['iconImage'];?>"placeholder="fa icon class" class="form-control" name="iconclass">
-                    </div>
-                    <br/>
-                    <button type="submit" class="btn btn-dark">Save</button>
+                <div class="col-8">
+                    <form method="POST" action="db/edit-category.php">
+                        <input type="hidden" name="id" value="<?php echo $cid;?>">
+                        <label>Category title</label>
+                        <div class="input-group">
+                            <input type="text" value="<?php echo $row['title'];?>" class="form-control" name="category">
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <input type="text" value="<?php echo $row['iconImage'];?>"placeholder="fa icon class" class="form-control" name="iconclass">
+                        </div>
+                        <br/>
+                        <button type="submit" class="btn btn-dark">Save</button>
                 </form>
                <?php include('include/message.php'); ?>
 
