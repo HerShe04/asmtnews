@@ -9,7 +9,9 @@
     $result = mysqli_query($conn,$query);
     $data = mysqli_fetch_assoc($result);
 
-    
+    $postQuery = "SELECT * FROM post";
+    $postResult = mysqli_query($conn,$postQuery);
+
 ?>
 
 <html>
@@ -24,7 +26,20 @@
              <div class="row">
             <?php include('include/left-nav.php');?>    
                <div class="col-8">
-                 this is col 8
+                 <div class="table">
+                   <th>Title</th>
+                   <th>Post Date</th>
+                   <th>Action</th>
+                   <?php while($row = mysqli_fetch_assoc($postResult)){
+                     ?>
+                     <tr>
+                       <td><?php $row['title'];?> </td>
+                       <td><?php $row['postDate'];?> </td>
+                       <td>Update|Delete</td>
+                     </tr>
+                     <?php } ?>
+                   </table>
+                 </div>
                </div>
              </div>
             </div>

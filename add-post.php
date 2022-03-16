@@ -57,6 +57,8 @@
                   <hr/>
                   <button type="submit" class="btn btn-dark">Save</button>
                 </form>
+                 </br>
+                <?php include('include/message.php'); ?>
                </div>
              </div>
             </div>
