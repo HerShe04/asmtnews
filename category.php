@@ -13,6 +13,7 @@
     $categoryResult = mysqli_query($conn,$categoryQuery);
 
 
+    
 ?>
 
 <html>
